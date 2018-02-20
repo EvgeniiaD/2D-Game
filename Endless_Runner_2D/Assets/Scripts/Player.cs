@@ -8,6 +8,12 @@ public class Player : MonoBehaviour
     private Vector2 axis;
     private Vector2 currentVelocity;
 
+    public Vector3 iniValue;
+    public Vector3 finalValue;
+    Vector3 deltaValue;
+    public float currentTime;
+    public float timeDuration;
+
     // Use this for initialization
     void Start()
     {
@@ -32,9 +38,13 @@ public class Player : MonoBehaviour
         if ((axis.x < 0 && transform.position.x < -2.5f) || (axis.x > 0 && transform.position.x > 2.5f))
         {
             currentVelocity.x = 0;
+
+            Easing.ExpoEaseInOut(currentTime, iniValue.x, deltaValue.x, timeDuration);
+
             return;
         }
         currentVelocity.x = speed.x * axis.x;
+
     }
     void VerticalMovement()
     {
