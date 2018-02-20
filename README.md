@@ -1,1 +1,1 @@
-# 2D-Game
+# Endless Runner 2D
