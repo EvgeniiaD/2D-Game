@@ -26,9 +26,9 @@ public class ObjectsSpawnerScript : MonoBehaviour
         if(Time.time > nextSpawn)
         {
             nextSpawn = Time.time + spawnRate;
-            rendX = Random.Range(-3.2f, 3.2f);
+            rendX = Random.Range(-3.1f, 3.1f);
             whereToSpawn = new Vector2(rendX, transform.position.y);
-            Instantiate(obstacles, whereToSpawn, Quaternion.Identity);
+            Instantiate(obstacles, whereToSpawn, Quaternion.identity);
         }
 		
 	}
