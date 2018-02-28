@@ -6,7 +6,7 @@ public class DeadTrigger : MonoBehaviour
 {
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Obstacle")
         {
             Debug.Log("KillPlayer");
             Application.LoadLevel(Application.loadedLevelName);

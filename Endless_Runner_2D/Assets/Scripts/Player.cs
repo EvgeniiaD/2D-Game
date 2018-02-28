@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
     }
     void HorizontalMovement()
     {
-        if ((axis.x < 0 && transform.position.x < -2.5f) || (axis.x > 0 && transform.position.x > 2.5f))
+        if ((axis.x < 0 && transform.position.x < -2.1f) || (axis.x > 0 && transform.position.x > 2.3f))
         {
             currentVelocity.x = 0;
 
