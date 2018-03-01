@@ -289,20 +289,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\backgroundScroll.cs" />
-    <Compile Include="Assets\Scripts\DataLogic.cs" />
     <Compile Include="Assets\Scripts\DeadTrigger.cs" />
     <Compile Include="Assets\Scripts\Destroy.cs" />
-    <Compile Include="Assets\Scripts\DialogText.cs" />
     <Compile Include="Assets\Scripts\Easing.cs" />
     <Compile Include="Assets\Scripts\InputManager.cs" />
-    <Compile Include="Assets\Scripts\LoadUIText.cs" />
     <Compile Include="Assets\Scripts\Managers\DataManager.cs" />
-    <Compile Include="Assets\Scripts\MenuButtons.cs" />
+    <Compile Include="Assets\Scripts\Menu\Audio\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\Menu\Audio\AudioPlayer.cs" />
+    <Compile Include="Assets\Scripts\Menu\Audio\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Menu\Audio\TestAudio.cs" />
+    <Compile Include="Assets\Scripts\Menu\DataLogic.cs" />
+    <Compile Include="Assets\Scripts\Menu\DialogText.cs" />
+    <Compile Include="Assets\Scripts\Menu\LoadUIText.cs" />
+    <Compile Include="Assets\Scripts\Menu\MenuButtons.cs" />
+    <Compile Include="Assets\Scripts\Menu\SettingsButton.cs" />
     <Compile Include="Assets\Scripts\MouseCursor.cs" />
     <Compile Include="Assets\Scripts\ObjectsSpawnerScript.cs" />
     <Compile Include="Assets\Scripts\ObstaclesBehaviour.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Scripts\SettingsButton.cs" />
     <Compile Include="Assets\Scripts\TransformEasing.cs" />
   </ItemGroup>
   <ItemGroup>
