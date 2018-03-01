@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class DeadTrigger : MonoBehaviour
 {
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Obstacle")
         {
-            Debug.Log("KillPlayer");
-            Application.LoadLevel(Application.loadedLevelName);
+            Debug.Log("KillObstacle");
+            
         }
     }
 }

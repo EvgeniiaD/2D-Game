@@ -5,15 +5,12 @@ using UnityEngine;
 public class Destroy : MonoBehaviour {
 
     
-	public GameObject block;
-
-
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
+
         if (other.tag == "Obstacle")
         {
-
-            Destroy(other);
+            Destroy(other.gameObject);
         }
     }
 
