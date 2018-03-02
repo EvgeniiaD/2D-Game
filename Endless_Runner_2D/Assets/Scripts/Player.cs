@@ -56,4 +56,14 @@ public class Player : MonoBehaviour
         currentVelocity.y = speed.y * axis.y;
 
     }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("Ha entrao");
+        if (other.tag == "Player")
+        {
+            Destroy(other.gameObject);
+        }
+
+
+    }
 }

@@ -32,4 +32,15 @@ public class ObjectsSpawnerScript : MonoBehaviour
         }
 		
 	}
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("Ha entrao");
+        if(other.tag == "Player")
+        {
+            Destroy(other.gameObject);
+        }
+
+
+    }
 }
