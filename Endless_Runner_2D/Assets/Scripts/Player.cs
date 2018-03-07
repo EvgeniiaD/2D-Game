@@ -58,12 +58,16 @@ public class Player : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Ha entrao");
-        if (other.tag == "Player")
+        if (other.tag == "Obstacle")
         {
-            Destroy(other.gameObject);
+            Die();
         }
 
 
+    }
+    void Die()
+    {
+        Debug.Log("Die");
+        Destroy(this.gameObject);
     }
 }

@@ -8,7 +8,7 @@ public class ObjectsSpawnerScript : MonoBehaviour
     public GameObject obstacles;
     float rendX;
     Vector2 whereToSpawn;
-    public float spawnRate = 2f;
+    public float spawnRate = 1f;
     float nextSpawn = 0.0f;
 
     
@@ -33,14 +33,5 @@ public class ObjectsSpawnerScript : MonoBehaviour
 		
 	}
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        Debug.Log("Ha entrao");
-        if(other.tag == "Player")
-        {
-            Destroy(other.gameObject);
-        }
 
-
-    }
 }
