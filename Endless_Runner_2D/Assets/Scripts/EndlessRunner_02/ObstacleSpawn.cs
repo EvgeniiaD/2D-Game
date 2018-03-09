@@ -22,7 +22,7 @@ public class ObstacleSpawn : MonoBehaviour
             xAXIS = Random.Range(minX, maxX);
             yAXIS = Random.Range(player.transform.localPosition.y - 20, player.transform.localPosition.y - 50);
 
-            Vector3 pos = new Vector3(Random.Range(minX, maxX), Random.Range(player.transform.localPosition.y, transform.localPosition.y * 2), 0);
+            Vector3 pos = new Vector3(Random.Range(minX, maxX), Random.Range(player.transform.localPosition.y - 20, transform.localPosition.y * 2), 0);
             Instantiate(obstacle.transform, pos, Quaternion.identity);
         }
     }
