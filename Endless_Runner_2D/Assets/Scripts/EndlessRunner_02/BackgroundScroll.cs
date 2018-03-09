@@ -1,0 +1,23 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BackgroundScroll : MonoBehaviour
+{
+
+    public GameObject track;
+    public bool spawned;
+
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player" && !spawned)
+        {
+
+            Vector3 pos = new Vector3(transform.parent.position.x, (transform.parent.position.y - 10f), transform.parent.position.z);
+            Instantiate(track.transform, pos, transform.parent.rotation);
+            spawned = true;
+        }
+
+    }
+}
