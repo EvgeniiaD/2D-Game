@@ -301,7 +301,10 @@
     <Compile Include="Assets\Scripts\EndlessRunner\ScoreTrigger.cs" />
     <Compile Include="Assets\Scripts\EndlessRunner\TransformEasing.cs" />
     <Compile Include="Assets\Scripts\EndlessRunner_02\BackgroundScroll.cs" />
+    <Compile Include="Assets\Scripts\EndlessRunner_02\BackgrounScroll2D.cs" />
+    <Compile Include="Assets\Scripts\EndlessRunner_02\CameraFollowing.cs" />
     <Compile Include="Assets\Scripts\EndlessRunner_02\ObstacleSpawn.cs" />
+    <Compile Include="Assets\Scripts\EndlessRunner_02\PlayerBehaviour.cs" />
     <Compile Include="Assets\Scripts\Managers\DataManager.cs" />
     <Compile Include="Assets\Scripts\Menu\Audio\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Menu\Audio\AudioPlayer.cs" />

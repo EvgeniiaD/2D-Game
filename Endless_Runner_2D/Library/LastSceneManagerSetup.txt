@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/EndlessRunner.unity
+- path: Assets/Scenes/EndleesRunner_02.unity
   isLoaded: 1
   isActive: 1
