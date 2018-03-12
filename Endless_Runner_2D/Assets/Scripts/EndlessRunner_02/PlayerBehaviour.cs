@@ -12,6 +12,7 @@ public class PlayerBehaviour : MonoBehaviour
     private float rotationSpeed;
 
     public Text scoreText;
+    public GameObject DeadUI;
 
     // Use this for initialization
     void Start ()
@@ -59,5 +60,6 @@ public class PlayerBehaviour : MonoBehaviour
     {
         print("Player dead");
         Destroy(this.gameObject);
+        DeadUI.SetActive(true);
     }
 }
