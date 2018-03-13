@@ -45,7 +45,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     void FixedUpdate()
     {
-        scoreText.GetComponent<Text>().text = "Score: " + score;
+        scoreText.GetComponent<Text>().text = "Score " + score;
     }
 
     void OnTriggerEnter2D(Collider2D other)

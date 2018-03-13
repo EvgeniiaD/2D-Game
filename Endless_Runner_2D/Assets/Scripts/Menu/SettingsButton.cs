@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class SettingsButton : MonoBehaviour {
+public class SettingsButton : MonoBehaviour
+{
 
 	public void Resolution(int res)
     {
@@ -21,8 +23,13 @@ public class SettingsButton : MonoBehaviour {
        QualitySettings.SetQualityLevel(value);
     }
 
-    public class ExampleClass : MonoBehaviour
+    public void LanguageES()
     {
-        public int qualityLevel = QualitySettings.GetQualityLevel();
+        Language.SetLanguage(Language.Lang.esES);
+    }
+    
+    public void LanguageUS()
+    {
+        Language.SetLanguage(Language.Lang.enUS);
     }
 }

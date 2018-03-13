@@ -1,5 +1,11 @@
-id	spanish	english
+﻿id	spanish	english
 start	Empezar	Start
+options	Opciones	Settings
 exit	Salir	Exit
-options	Opciones	Options
-title	Titulo	Title
+quality	Calidad	Quality
+resolution	Resolución	Resolution
+back	Atrás	Back
+restart	Reiniciar	Restart
+sound	Sonido	Sound
+music	Música	Music
+score	Puntuación	Score
