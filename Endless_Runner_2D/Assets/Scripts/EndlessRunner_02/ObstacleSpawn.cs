@@ -4,26 +4,42 @@ using UnityEngine;
 
 public class ObstacleSpawn : MonoBehaviour
 {
-
-    public GameObject player;
-
     public GameObject obstacle;
-    public float amountOfObstacles;
 
     public float minX, maxX;
+    public float minTime, maxTime;
+    private float spawnTime;
+    private float timeCounter = 0;
+
+    public bool disable;
 
     public void Start()
     {
-        player = GameObject.FindWithTag("Player");
+        spawnTime = minTime;
+        timeCounter = 0;
+    }
 
-        for(int i = 0; i < amountOfObstacles; i++)
+    private void Update()
+    {
+        if(disable) return;
+
+        if(timeCounter >= spawnTime)
         {
-            float xAXIS, yAXIS;
-            xAXIS = Random.Range(minX, maxX);
-            yAXIS = Random.Range(player.transform.localPosition.y - 20, player.transform.localPosition.y - 50);
-
-            Vector3 pos = new Vector3(Random.Range(minX, maxX), Random.Range(player.transform.localPosition.y - 20, transform.localPosition.y * 2), 0);
-            Instantiate(obstacle.transform, pos, Quaternion.identity);
+            Spawn();
         }
+        else timeCounter += Time.deltaTime;
+    }
+
+    void Spawn()
+    {
+        timeCounter = 0;
+        spawnTime = Random.Range(minTime, maxTime);
+
+        float xPos = Random.Range(minX, maxX);
+
+        Vector2 pos = transform.position;
+        pos.x = xPos;
+
+        Instantiate(obstacle, pos, Quaternion.identity);
     }
 }

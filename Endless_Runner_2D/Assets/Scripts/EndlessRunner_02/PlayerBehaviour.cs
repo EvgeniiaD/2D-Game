@@ -14,12 +14,15 @@ public class PlayerBehaviour : MonoBehaviour
     public Text scoreText;
     public GameObject DeadUI;
 
+    public ObstacleSpawn spawner;
+
     // Use this for initialization
     void Start ()
     {
         score = 0;
         movingLeft = true;
 
+        spawner.disable = false;
 	}
 	
 	// Update is called once per frame
@@ -61,5 +64,6 @@ public class PlayerBehaviour : MonoBehaviour
         print("Player dead");
         Destroy(this.gameObject);
         DeadUI.SetActive(true);
+        spawner.disable = true;
     }
 }
