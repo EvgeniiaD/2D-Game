@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4110551598109838}
   - component: {fileID: 212396538700283882}
   - component: {fileID: 61146250882611290}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: valla
   m_TagString: Obstacle
   m_Icon: {fileID: 0}

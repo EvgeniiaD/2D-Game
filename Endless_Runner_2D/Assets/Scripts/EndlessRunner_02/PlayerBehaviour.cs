@@ -4,17 +4,23 @@ using UnityEngine;
 using UnityEngine.UI;
 public class PlayerBehaviour : MonoBehaviour
 {
-
+    [Header("Score")]
     private float score;
-    public float movementSpeed;
-
-    private bool movingLeft;
-    private float rotationSpeed;
-
     public Text scoreText;
     public GameObject DeadUI;
 
+    public float movementSpeed;
+
+    [Header("Movement")]
+    private bool movingLeft;
+    private float rotationSpeed;
+
     public ObstacleSpawn spawner;
+
+    [Header("Power Up")]
+    private bool invincibleMode;
+    private bool isPowerUpActive;
+    private float powerUpLengthCounter;
 
     // Use this for initialization
     void Start ()
@@ -23,10 +29,13 @@ public class PlayerBehaviour : MonoBehaviour
         movingLeft = true;
 
         spawner.disable = false;
+
+        invincibleMode = false;
+        isPowerUpActive = false;
 	}
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update()
     {
         score += Time.deltaTime;
         transform.Translate(Vector3.down * Time.deltaTime * movementSpeed);
@@ -42,13 +51,25 @@ public class PlayerBehaviour : MonoBehaviour
             rotationSpeed += 1.5f * Time.deltaTime;
         }
 
-        if (movingLeft) transform.Rotate(0, 0, rotationSpeed);
+        if(movingLeft) transform.Rotate(0, 0, rotationSpeed);
         else transform.Rotate(0, 0, -rotationSpeed);
-	}
+
+
+        if(isPowerUpActive)
+        {
+            powerUpLengthCounter -= Time.deltaTime;
+            Physics2D.IgnoreLayerCollision(9, 8, true);
+
+            if(powerUpLengthCounter <= 0)
+            {
+                isPowerUpActive = false;
+            }
+        }
+    }
 
     void FixedUpdate()
     {
-        scoreText.GetComponent<Text>().text = "Score " + score;
+        scoreText.GetComponent<Text>().text = "Score " + Mathf.Round(score);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -65,5 +86,14 @@ public class PlayerBehaviour : MonoBehaviour
         Destroy(this.gameObject);
         DeadUI.SetActive(true);
         spawner.disable = true;
+    }
+
+    public void ActivatePowerUp(bool mode, float time)
+    {
+        isPowerUpActive = true;
+        invincibleMode = true;
+        invincibleMode = mode;
+        powerUpLengthCounter = time;
+
     }
 }
