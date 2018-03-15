@@ -21,10 +21,13 @@ public class PlayerBehaviour : MonoBehaviour
     private bool invincibleMode;
     private bool isPowerUpActive;
     private float powerUpLengthCounter;
+    
+    public ParticleSystem particles;
 
     // Use this for initialization
     void Start ()
     {
+        particles.Stop();
         score = 0;
         movingLeft = true;
 
@@ -45,6 +48,14 @@ public class PlayerBehaviour : MonoBehaviour
         {
             rotationSpeed = .5f;
             movingLeft = !movingLeft;
+
+            particles.Play();
+
+
+        }
+        if(Input.GetKeyUp(KeyCode.Space))
+        {
+            particles.Stop();
         }
         if(Input.GetKey(KeyCode.Space))
         {
