@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class SettingsButton : MonoBehaviour
 {
+    public Slider musicSlider;
+    public Slider sfxSlider;
 
 	public void Resolution(int res)
     {
@@ -32,4 +34,11 @@ public class SettingsButton : MonoBehaviour
     {
         Language.SetLanguage(Language.Lang.enUS);
     }
+
+    public void ChangeVolume()
+    {
+        AudioManager.SetMusicVolume(musicSlider.value);
+        AudioManager.SetSFXVolume(sfxSlider.value);
+    }
+
 }
