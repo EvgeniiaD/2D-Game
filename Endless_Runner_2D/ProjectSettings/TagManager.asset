@@ -7,6 +7,8 @@ TagManager:
   - Boundary
   - Obstacle
   - Ground
+  - Coin
+  - Ground02
   layers:
   - Default
   - TransparentFX

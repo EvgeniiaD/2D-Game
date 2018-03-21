@@ -9,6 +9,8 @@ public class ScoreManager : MonoBehaviour
     public Text hiScoreText;
     public Text coinsText;
 
+    public Transform playerTransform;
+
     public float scoreCount;
     public float hiScoreCount;
     public int coinsCount;
@@ -16,6 +18,11 @@ public class ScoreManager : MonoBehaviour
     public float pointPerSecond;
 
     public bool scoreIncreasing;
+
+
+    private float previousScore;
+    private float currentScore;
+    private float diffScore;
 
     // Use this for initialization
     void Start()
@@ -32,7 +39,7 @@ public class ScoreManager : MonoBehaviour
     {
         if(scoreIncreasing)
         {
-            scoreCount += pointPerSecond * Time.deltaTime;
+            scoreCount = coinsCount + ((playerTransform.position.y - 4.78f) * -1);
         }
 
 

@@ -341,7 +341,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 524090225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 16.06, z: 0}
+  m_LocalPosition: {x: 0, y: 5.56, z: 0}
   m_LocalScale: {x: 22.522501, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 789409717}
@@ -940,7 +940,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1029593537490912, guid: 588addc4d6a83184f803b88aa0d29856, type: 2}
       propertyPath: m_TagString
-      value: Ground
+      value: Ground02
       objectReference: {fileID: 0}
     - target: {fileID: 212169210586308922, guid: 588addc4d6a83184f803b88aa0d29856,
         type: 2}
@@ -1130,8 +1130,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1001239329}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 529.5, y: 298, z: 0}
-  m_LocalScale: {x: 1.32375, y: 1.32375, z: 1.32375}
+  m_LocalPosition: {x: 528.5, y: 297.5, z: 0}
+  m_LocalScale: {x: 1.32125, y: 1.32125, z: 1.32125}
   m_Children:
   - {fileID: 1080957331}
   - {fileID: 1390523724}
@@ -2460,6 +2460,7 @@ MonoBehaviour:
   scoreText: {fileID: 1429774774}
   hiScoreText: {fileID: 1458574297}
   coinsText: {fileID: 1622803202}
+  playerTransform: {fileID: 803789712}
   scoreCount: 0
   hiScoreCount: 0
   coinsCount: 0
@@ -2520,6 +2521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacle: {fileID: 1736924432196388, guid: 1e82f3e7c56693247b3b30f3a306dd51, type: 2}
+  playerTransform: {fileID: 0}
   minX: -4
   maxX: 6
   minTime: 0.1

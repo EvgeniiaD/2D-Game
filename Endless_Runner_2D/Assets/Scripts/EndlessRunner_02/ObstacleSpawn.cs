@@ -6,6 +6,8 @@ public class ObstacleSpawn : MonoBehaviour
 {
     public GameObject obstacle;
 
+    public Transform playerTransform;
+
     public float minX, maxX;
     public float minTime, maxTime;
     private float spawnTime;
