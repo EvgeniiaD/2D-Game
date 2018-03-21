@@ -23,6 +23,7 @@ public class PlayerBehaviour : MonoBehaviour
     [Header("Spawns")]
     public ObstacleSpawn spawner;
     public CoinSpawn coinSpawner;
+    public AudioSource music;
 
     [Header("Power Up")]
     private bool invincibleMode;
@@ -108,6 +109,7 @@ public class PlayerBehaviour : MonoBehaviour
         DeadUI.SetActive(true);
         spawner.disable = true;
         coinSpawner.coinDisable = true;
+        music.Stop();
     }
 
     public void ActivatePowerUp(bool mode, float time)
