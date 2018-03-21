@@ -4,31 +4,34 @@ using UnityEngine;
 
 public class PowerUp : MonoBehaviour
 {
-    public bool invincibleMode;
-    public float powerUpLength;
-    public PlayerBehaviour thePlayer;
+    public int scoreToGive;
+    private ScoreManager theScoreManager;
+    private AudioSource coinSound;
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start()
     {
-        thePlayer = FindObjectOfType<PlayerBehaviour>();
-	}
-	
-	// Update is called once per frame
-	void Update ()
-    {
-		
-	}
+        theScoreManager = FindObjectOfType<ScoreManager>();
 
-    void OnTriggerEnter2D(Collider2D other)
+        coinSound = GameObject.Find("CoinSound").GetComponent<AudioSource>();
+    }
+
+    // Update is called once per frame
+    void Update()
     {
 
-        if(other.tag == "Player")
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.name == "Player")
         {
-            thePlayer.ActivatePowerUp(invincibleMode, powerUpLength); 
-        }
-        invincibleMode = true;
-        gameObject.SetActive(false);
+            theScoreManager.coinsCount++;
+            theScoreManager.AddScore(scoreToGive);
+            gameObject.SetActive(false);
 
+            coinSound.Play();
+        }
     }
 }

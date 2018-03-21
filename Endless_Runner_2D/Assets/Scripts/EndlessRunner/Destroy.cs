@@ -16,6 +16,10 @@ public class Destroy : MonoBehaviour {
         {
             Destroy(other.gameObject);
         }
+        if(other.tag == "Coin")
+        {
+            Destroy(other.gameObject);
+        }
 
     }
 

@@ -8,6 +8,7 @@ public class PlayerBehaviour : MonoBehaviour
     private float score;
     public Text scoreText;
     public GameObject DeadUI;
+    public GamingManager theGameManager;
 
     public float movementSpeed;
 
@@ -15,7 +16,13 @@ public class PlayerBehaviour : MonoBehaviour
     private bool movingLeft;
     private float rotationSpeed;
 
+    [Header("Sounds")]
+    public AudioSource deathSound;
+    public AudioSource moveSound;
+
+    [Header("Spawns")]
     public ObstacleSpawn spawner;
+    public CoinSpawn coinSpawner;
 
     [Header("Power Up")]
     private bool invincibleMode;
@@ -32,6 +39,7 @@ public class PlayerBehaviour : MonoBehaviour
         movingLeft = true;
 
         spawner.disable = false;
+        coinSpawner.coinDisable = false;
 
         invincibleMode = false;
         isPowerUpActive = false;
@@ -48,7 +56,7 @@ public class PlayerBehaviour : MonoBehaviour
         {
             rotationSpeed = .5f;
             movingLeft = !movingLeft;
-
+            moveSound.Play();
             particles.Play();
 
 
@@ -88,6 +96,8 @@ public class PlayerBehaviour : MonoBehaviour
         if (other.tag == "Obstacle")
         {
             Die();
+            deathSound.Play();
+            theGameManager.Dead();
         }
     }
 
@@ -97,6 +107,7 @@ public class PlayerBehaviour : MonoBehaviour
         Destroy(this.gameObject);
         DeadUI.SetActive(true);
         spawner.disable = true;
+        coinSpawner.coinDisable = true;
     }
 
     public void ActivatePowerUp(bool mode, float time)
