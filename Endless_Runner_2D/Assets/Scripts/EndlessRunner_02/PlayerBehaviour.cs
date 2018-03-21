@@ -55,7 +55,7 @@ public class PlayerBehaviour : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            rotationSpeed = .5f;
+            rotationSpeed = 1.0f;
             movingLeft = !movingLeft;
             moveSound.Play();
             particles.Play();
