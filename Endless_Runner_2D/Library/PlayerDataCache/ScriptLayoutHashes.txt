@@ -1,5 +1,5 @@
 WindowsStandalone
-3f0ff2a978a277e8dedaa20881c42d9d Assembly-CSharp.dll:.PlayerBehaviour
+05cc79cfbd9589ae24c183b4529927de Assembly-CSharp.dll:.PlayerBehaviour
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Destroy
 b1180fb9c0c045a5c1fb5322dcffe8be Assembly-CSharp.dll:.BackgrounScroll2D
 b1180fb9c0c045a5c1fb5322dcffe8be Assembly-CSharp.dll:.BackgroundScroll
