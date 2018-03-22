@@ -617,6 +617,7 @@ Transform:
   - {fileID: 1699163839}
   - {fileID: 1929087341}
   - {fileID: 1335513575}
+  - {fileID: 2123094131}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2885,3 +2886,51 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3fef055ee1ad2249a2e6503de90270b, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2123094130
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2123094131}
+  - component: {fileID: 2123094132}
+  m_Layer: 0
+  m_Name: TreeSpawnersmall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2123094131
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2123094130}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.01, y: -5.24, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 789409717}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2123094132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2123094130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b2b763d424c1e74ba3c7429f75ca169, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacle_02: {fileID: 1342539844989122, guid: 18a14b47309e2e34bade4b91c7fed909,
+    type: 2}
+  playerTransform: {fileID: 0}
+  minX: -4.4
+  maxX: 4.46
+  minTime: 1
+  maxTime: 2
+  disable: 0
