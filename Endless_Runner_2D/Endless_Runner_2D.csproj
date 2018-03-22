@@ -217,31 +217,30 @@
     <Reference Include="UnityEngine.Purchasing">
       <HintPath>Library\UnityAssemblies\UnityEngine.Purchasing.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
     <Reference Include="Facebook.Unity.Settings">
       <HintPath>Library\FacebookSDK\Facebook.Unity.Settings.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\EndlessRunner\backgroundScroll.cs" />
-    <Compile Include="Assets\Scripts\EndlessRunner\DeadTrigger.cs" />
-    <Compile Include="Assets\Scripts\EndlessRunner\Destroy.cs" />
-    <Compile Include="Assets\Scripts\EndlessRunner\Easing.cs" />
-    <Compile Include="Assets\Scripts\EndlessRunner\InputManager.cs" />
-    <Compile Include="Assets\Scripts\EndlessRunner\MouseCursor.cs" />
-    <Compile Include="Assets\Scripts\EndlessRunner\ObjectsSpawnerScript.cs" />
-    <Compile Include="Assets\Scripts\EndlessRunner\ObstaclesBehaviour.cs" />
-    <Compile Include="Assets\Scripts\EndlessRunner\Player.cs" />
-    <Compile Include="Assets\Scripts\EndlessRunner\PointsCounter.cs" />
-    <Compile Include="Assets\Scripts\EndlessRunner\ScoreTrigger.cs" />
-    <Compile Include="Assets\Scripts\EndlessRunner\TransformEasing.cs" />
     <Compile Include="Assets\Scripts\EndlessRunner_02\BackgroundScroll.cs" />
     <Compile Include="Assets\Scripts\EndlessRunner_02\BackgrounScroll2D.cs" />
     <Compile Include="Assets\Scripts\EndlessRunner_02\CameraFollowing.cs" />
     <Compile Include="Assets\Scripts\EndlessRunner_02\CoinSpawn.cs" />
+    <Compile Include="Assets\Scripts\EndlessRunner_02\Destroy.cs" />
+    <Compile Include="Assets\Scripts\EndlessRunner_02\MouseCursor.cs" />
     <Compile Include="Assets\Scripts\EndlessRunner_02\ObstacleSpawn.cs" />
     <Compile Include="Assets\Scripts\EndlessRunner_02\PlayerBehaviour.cs" />
+    <Compile Include="Assets\Scripts\EndlessRunner_02\PointsCounter.cs" />
     <Compile Include="Assets\Scripts\EndlessRunner_02\PowerUp.cs" />
     <Compile Include="Assets\Scripts\EndlessRunner_02\ScoreManager.cs" />
+    <Compile Include="Assets\Scripts\EndlessRunner_02\ScoreTrigger.cs" />
+    <Compile Include="Assets\Scripts\EndlessRunner_02\treespawner.cs" />
     <Compile Include="Assets\Scripts\GroundAnimation.cs" />
     <Compile Include="Assets\Scripts\Managers\DataManager.cs" />
     <Compile Include="Assets\Scripts\Menu\Audio\AudioManager.cs" />

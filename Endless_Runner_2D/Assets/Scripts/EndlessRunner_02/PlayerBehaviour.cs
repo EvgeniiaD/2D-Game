@@ -22,6 +22,10 @@ public class PlayerBehaviour : MonoBehaviour
 
     [Header("Spawns")]
     public ObstacleSpawn spawner;
+    public treespawner treeSpawner;
+    public treespawner treeSpawner2;
+    public treespawner luzD;
+    public treespawner luzIz;
     public CoinSpawn coinSpawner;
     public AudioSource music;
 
@@ -32,6 +36,8 @@ public class PlayerBehaviour : MonoBehaviour
     
     public ParticleSystem particles;
 
+    private bool isDead = false;
+
     // Use this for initialization
     void Start ()
     {
@@ -40,15 +46,23 @@ public class PlayerBehaviour : MonoBehaviour
         movingLeft = true;
 
         spawner.disable = false;
+        treeSpawner.disable = false;
+        treeSpawner2.disable = false;
+        luzIz.disable = false;
+        luzD.disable = false;
         coinSpawner.coinDisable = false;
 
-        invincibleMode = false;
-        isPowerUpActive = false;
-	}
+        isDead = false;
+
+        /*invincibleMode = false;
+        isPowerUpActive = false;*/
+    }
 
     // Update is called once per frame
     void Update()
     {
+        if(isDead) return;
+         
         score += Time.deltaTime;
         transform.Translate(Vector3.down * Time.deltaTime * movementSpeed);
 
@@ -75,7 +89,7 @@ public class PlayerBehaviour : MonoBehaviour
         else transform.Rotate(0, 0, -rotationSpeed);
 
 
-        if(isPowerUpActive)
+        /*if(isPowerUpActive)
         {
             powerUpLengthCounter -= Time.deltaTime;
             Physics2D.IgnoreLayerCollision(9, 8, true);
@@ -84,17 +98,19 @@ public class PlayerBehaviour : MonoBehaviour
             {
                 isPowerUpActive = false;
             }
-        }
+        }*/
     }
 
     void FixedUpdate()
     {
+        if(isDead) return;
+
         scoreText.GetComponent<Text>().text = "Score " + Mathf.Round(score);
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Obstacle")
+        if (!isDead && (other.tag == "Obstacle" || other.tag == "Limit"))
         {
             Die();
             deathSound.Play();
@@ -105,19 +121,25 @@ public class PlayerBehaviour : MonoBehaviour
     void Die()
     {
         print("Player dead");
-        Destroy(this.gameObject);
+        // Destroy(this.gameObject);
+        isDead = true;
         DeadUI.SetActive(true);
+        Destroy(spawner);
         spawner.disable = true;
+        treeSpawner.disable = true;
+        treeSpawner2.disable = true;
+        luzIz.disable = true;
+        luzD.disable = true;
         coinSpawner.coinDisable = true;
         music.Stop();
     }
 
-    public void ActivatePowerUp(bool mode, float time)
+    /*public void ActivatePowerUp(bool mode, float time)
     {
         isPowerUpActive = true;
         invincibleMode = true;
         invincibleMode = mode;
         powerUpLengthCounter = time;
 
-    }
+    }*/
 }

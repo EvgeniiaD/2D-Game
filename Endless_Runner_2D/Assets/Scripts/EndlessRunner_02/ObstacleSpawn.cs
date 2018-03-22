@@ -16,10 +16,18 @@ public class ObstacleSpawn : MonoBehaviour
 
     public bool disable;
 
+    private float previousY;
+    private float currentY;
+    private float diffY;
+
     public void Start()
     {
         spawnTime = minTime;
         timeCounter = 0;
+
+        previousY = playerTransform.position.y;
+
+        //offset = Vector2.zero;
     }
 
     private void Update()

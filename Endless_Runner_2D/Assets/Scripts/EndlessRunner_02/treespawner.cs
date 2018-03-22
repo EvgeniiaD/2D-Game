@@ -40,7 +40,7 @@ public class treespawner : MonoBehaviour
 
 			float xPos = Random.Range(minX, maxX);
 
-			Vector2 pos = transform.position;
+			Vector3 pos = transform.position;
 			pos.x = xPos;
 
 			Instantiate(obstacle_02, pos, Quaternion.identity);
