@@ -401,7 +401,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &715084727
 Transform:
   m_ObjectHideFlags: 0
@@ -409,7 +409,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 715084726}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.01, y: -5.24, z: 0}
+  m_LocalPosition: {x: -6.01, y: -5.24, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 789409717}
@@ -426,7 +426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2b763d424c1e74ba3c7429f75ca169, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle_02: {fileID: 1224800831453266, guid: 4c1c502bbbe8a7b459a2876abe4ee751,
+  obstacle_02: {fileID: 1243594354912606, guid: d148e63956a6ab74896be3218600a63d,
     type: 2}
   playerTransform: {fileID: 0}
   minX: -5.004
@@ -1216,8 +1216,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1001239329}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 510, y: 287, z: 0}
-  m_LocalScale: {x: 1.275, y: 1.275, z: 1.275}
+  m_LocalPosition: {x: 296, y: 166.5, z: 0}
+  m_LocalScale: {x: 0.74, y: 0.74, z: 0.74}
   m_Children:
   - {fileID: 1080957331}
   - {fileID: 1390523724}
@@ -1244,7 +1244,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1080957331
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2425,7 +2425,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1701235658
 Transform:
   m_ObjectHideFlags: 0
@@ -2434,7 +2434,7 @@ Transform:
   m_GameObject: {fileID: 1701235657}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.82, y: -5.24, z: 5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 789409717}
   m_RootOrder: 7
@@ -2450,7 +2450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2b763d424c1e74ba3c7429f75ca169, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle_02: {fileID: 1224800831453266, guid: 4c1c502bbbe8a7b459a2876abe4ee751,
+  obstacle_02: {fileID: 1243594354912606, guid: d148e63956a6ab74896be3218600a63d,
     type: 2}
   playerTransform: {fileID: 0}
   minX: 4.494
