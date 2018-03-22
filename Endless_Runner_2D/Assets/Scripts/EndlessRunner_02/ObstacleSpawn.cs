@@ -6,6 +6,7 @@ public class ObstacleSpawn : MonoBehaviour
 {
     public GameObject obstacle;
 
+
     public Transform playerTransform;
 
     public float minX, maxX;
@@ -43,5 +44,7 @@ public class ObstacleSpawn : MonoBehaviour
         pos.x = xPos;
 
         Instantiate(obstacle, pos, Quaternion.identity);
+
+
     }
 }
