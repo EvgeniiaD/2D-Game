@@ -426,7 +426,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 550244306}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.39, y: -5.24, z: 0}
+  m_LocalPosition: {x: -6.01, y: -5.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 789409717}
@@ -446,10 +446,10 @@ MonoBehaviour:
   obstacle_02: {fileID: 1342539844989122, guid: ea906cd1646489c48b494408a8dc3c60,
     type: 2}
   playerTransform: {fileID: 0}
-  minX: -4.39
-  maxX: -6.01
-  minTime: 2
-  maxTime: 3
+  minX: -4.4
+  maxX: 4.46
+  minTime: 1
+  maxTime: 4
   disable: 0
 --- !u!1 &770175312
 GameObject:
@@ -1237,8 +1237,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1001239329}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 100, y: 56.5, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalPosition: {x: 475.5, y: 267.5, z: 0}
+  m_LocalScale: {x: 1.18875, y: 1.18875, z: 1.18875}
   m_Children:
   - {fileID: 1080957331}
   - {fileID: 1390523724}

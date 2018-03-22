@@ -40,5 +40,6 @@ public class GroundAnimation : MonoBehaviour
     {
         groundPos.y = playerTransform.position.y;
         transform.position = groundPos;
+
     }
 }
