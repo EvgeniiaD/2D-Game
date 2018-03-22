@@ -9,6 +9,7 @@ TagManager:
   - Ground
   - Coin
   - Ground02
+  - Limit
   layers:
   - Default
   - TransparentFX
