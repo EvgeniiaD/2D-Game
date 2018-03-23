@@ -21,7 +21,7 @@ TagManager:
   - 
   - obstacle
   - Player
-  - 
+  - boton
   - 
   - 
   - 
@@ -55,4 +55,7 @@ TagManager:
     locked: 0
   - name: Obstacles
     uniqueID: 2568683179
+    locked: 0
+  - name: boton
+    uniqueID: 2119903885
     locked: 0

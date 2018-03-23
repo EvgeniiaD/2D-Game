@@ -1216,8 +1216,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1001239329}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 256.5, y: 144.5, z: 0}
-  m_LocalScale: {x: 0.64125, y: 0.64125, z: 0.64125}
+  m_LocalPosition: {x: 215.5, y: 121, z: 0}
+  m_LocalScale: {x: 0.53875, y: 0.53875, z: 0.53875}
   m_Children:
   - {fileID: 1080957331}
   - {fileID: 1390523724}
@@ -1650,7 +1650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.08823532, g: 0.08823532, b: 0.08823532, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1658,8 +1658,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_Font: {fileID: 12800000, guid: 02b374cc74bac6a43afc212e281c535f, type: 3}
+    m_FontSize: 28
     m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 2
@@ -1724,7 +1724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.04411763, g: 0.04411763, b: 0.04411763, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1732,8 +1732,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_Font: {fileID: 12800000, guid: 02b374cc74bac6a43afc212e281c535f, type: 3}
+    m_FontSize: 28
     m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 2
@@ -1775,16 +1775,16 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1486637031}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 15, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 41.31, z: 0}
+  m_LocalScale: {x: 8.1, y: 4.35, z: 1}
   m_Children: []
   m_Father: {fileID: 1080957331}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 15}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 41.31}
+  m_SizeDelta: {x: 100, y: 99.82001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1486637033
 MonoBehaviour:
@@ -2187,7 +2187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.07352942, g: 0.07352942, b: 0.07352942, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2195,8 +2195,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_Font: {fileID: 12800000, guid: 02b374cc74bac6a43afc212e281c535f, type: 3}
+    m_FontSize: 28
     m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 2
@@ -2891,7 +2891,7 @@ Prefab:
     - target: {fileID: 198885760311857470, guid: a3fef055ee1ad2249a2e6503de90270b,
         type: 2}
       propertyPath: lengthInSec
-      value: 0.5
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 198885760311857470, guid: a3fef055ee1ad2249a2e6503de90270b,
         type: 2}
@@ -2931,17 +2931,32 @@ Prefab:
     - target: {fileID: 198885760311857470, guid: a3fef055ee1ad2249a2e6503de90270b,
         type: 2}
       propertyPath: InitialModule.startLifetime.scalar
-      value: 1
+      value: 0.38
       objectReference: {fileID: 0}
     - target: {fileID: 198885760311857470, guid: a3fef055ee1ad2249a2e6503de90270b,
         type: 2}
       propertyPath: InitialModule.startLifetime.minScalar
-      value: 0.5
+      value: 0.46
       objectReference: {fileID: 0}
     - target: {fileID: 198885760311857470, guid: a3fef055ee1ad2249a2e6503de90270b,
         type: 2}
       propertyPath: simulationSpeed
       value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 198885760311857470, guid: a3fef055ee1ad2249a2e6503de90270b,
+        type: 2}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 198885760311857470, guid: a3fef055ee1ad2249a2e6503de90270b,
+        type: 2}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 198885760311857470, guid: a3fef055ee1ad2249a2e6503de90270b,
+        type: 2}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 0.16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3fef055ee1ad2249a2e6503de90270b, type: 2}
