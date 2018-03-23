@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: cb946655e59cb7f4a80f1506c9c8e7ea
+timeCreated: 1521764668
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Ice-&Snow
+  fontNames:
+  - Ice-&Snow
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 02b374cc74bac6a43afc212e281c535f, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
